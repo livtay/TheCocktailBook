@@ -24,6 +24,8 @@
 		48873B982AA7F95D00F304D3 /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B972AA7F95C00F304D3 /* DetailImageView.swift */; };
 		48873B9A2AA7FA0B00F304D3 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B992AA7FA0B00F304D3 /* RecipeListView.swift */; };
 		48873B9C2AA7FC0700F304D3 /* RecipeInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B9B2AA7FC0700F304D3 /* RecipeInstructionsView.swift */; };
+		48B9DFA22AA80C4A00CB9C54 /* RandomCocktailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9DFA12AA80C4A00CB9C54 /* RandomCocktailView.swift */; };
+		48B9DFA62AA827D300CB9C54 /* RandomCocktailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9DFA52AA827D300CB9C54 /* RandomCocktailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		48873B972AA7F95C00F304D3 /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
 		48873B992AA7FA0B00F304D3 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		48873B9B2AA7FC0700F304D3 /* RecipeInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionsView.swift; sourceTree = "<group>"; };
+		48B9DFA12AA80C4A00CB9C54 /* RandomCocktailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCocktailView.swift; sourceTree = "<group>"; };
+		48B9DFA52AA827D300CB9C54 /* RandomCocktailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCocktailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +120,6 @@
 			children = (
 				48873B802AA3E5D900F304D3 /* App Core */,
 				48873B832AA3E62D00F304D3 /* Models */,
-				48873B842AA3E63F00F304D3 /* View Models */,
 				48873B822AA3E60300F304D3 /* Views */,
 				48873B852AA3E64E00F304D3 /* Services */,
 				48873B5C2AA3E5AA00F304D3 /* Preview Content */,
@@ -169,9 +172,10 @@
 		48873B822AA3E60300F304D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				48873B942AA7F5F000F304D3 /* Tab Bar */,
-				48873B922AA5487C00F304D3 /* Search */,
 				48873B932AA5488100F304D3 /* Details */,
+				48B9DF9F2AA7FEB500CB9C54 /* Random */,
+				48873B922AA5487C00F304D3 /* Search */,
+				48873B942AA7F5F000F304D3 /* Tab Bar */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,14 +189,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		48873B842AA3E63F00F304D3 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				48873B882AA3EA1A00F304D3 /* CocktailSearchViewModel.swift */,
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
 		48873B852AA3E64E00F304D3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +200,7 @@
 		48873B922AA5487C00F304D3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				48B9DFA32AA827B200CB9C54 /* Search View Models */,
 				48873B582AA3E5A800F304D3 /* CocktailSearchView.swift */,
 				48873B8E2AA53AF300F304D3 /* CocktailRow.swift */,
 			);
@@ -227,6 +224,31 @@
 				48873B952AA7F60200F304D3 /* TabBar.swift */,
 			);
 			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		48B9DF9F2AA7FEB500CB9C54 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				48B9DFA42AA827C100CB9C54 /* Random View Models */,
+				48B9DFA12AA80C4A00CB9C54 /* RandomCocktailView.swift */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		48B9DFA32AA827B200CB9C54 /* Search View Models */ = {
+			isa = PBXGroup;
+			children = (
+				48873B882AA3EA1A00F304D3 /* CocktailSearchViewModel.swift */,
+			);
+			path = "Search View Models";
+			sourceTree = "<group>";
+		};
+		48B9DFA42AA827C100CB9C54 /* Random View Models */ = {
+			isa = PBXGroup;
+			children = (
+				48B9DFA52AA827D300CB9C54 /* RandomCocktailViewModel.swift */,
+			);
+			path = "Random View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +386,8 @@
 				48873B892AA3EA1A00F304D3 /* CocktailSearchViewModel.swift in Sources */,
 				48873B592AA3E5A800F304D3 /* CocktailSearchView.swift in Sources */,
 				48873B9A2AA7FA0B00F304D3 /* RecipeListView.swift in Sources */,
+				48B9DFA62AA827D300CB9C54 /* RandomCocktailViewModel.swift in Sources */,
+				48B9DFA22AA80C4A00CB9C54 /* RandomCocktailView.swift in Sources */,
 				48873B572AA3E5A800F304D3 /* TheCocktailBookApp.swift in Sources */,
 				48873B8B2AA42FB600F304D3 /* Cocktail.swift in Sources */,
 				48873B872AA3E6BC00F304D3 /* TCDBService.swift in Sources */,

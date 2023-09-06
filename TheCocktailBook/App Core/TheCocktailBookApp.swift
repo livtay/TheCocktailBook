@@ -10,7 +10,11 @@ struct TheCocktailBookApp: App {
   
   private func makeTabBar() -> TabBar {
     let cocktailService = TCDBService.live
-    let viewModel = CocktailSearchViewModel(cocktailService: cocktailService)
-    return TabBar(searchViewModel: viewModel)
+    let searchViewModel = CocktailSearchViewModel(cocktailService: cocktailService)
+    let randomViewModel = RandomCocktailViewModel(cocktailService: cocktailService)
+    return TabBar(
+      searchViewModel: searchViewModel,
+      randomViewModel: randomViewModel
+    )
   }
 }
