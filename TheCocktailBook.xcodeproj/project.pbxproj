@@ -20,6 +20,10 @@
 		48873B8D2AA434AB00F304D3 /* CocktailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B8C2AA434AB00F304D3 /* CocktailsResponse.swift */; };
 		48873B8F2AA53AF300F304D3 /* CocktailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B8E2AA53AF300F304D3 /* CocktailRow.swift */; };
 		48873B912AA5487200F304D3 /* CocktailDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B902AA5487200F304D3 /* CocktailDetailsView.swift */; };
+		48873B962AA7F60300F304D3 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B952AA7F60200F304D3 /* TabBar.swift */; };
+		48873B982AA7F95D00F304D3 /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B972AA7F95C00F304D3 /* DetailImageView.swift */; };
+		48873B9A2AA7FA0B00F304D3 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B992AA7FA0B00F304D3 /* RecipeListView.swift */; };
+		48873B9C2AA7FC0700F304D3 /* RecipeInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48873B9B2AA7FC0700F304D3 /* RecipeInstructionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,10 @@
 		48873B8C2AA434AB00F304D3 /* CocktailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsResponse.swift; sourceTree = "<group>"; };
 		48873B8E2AA53AF300F304D3 /* CocktailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRow.swift; sourceTree = "<group>"; };
 		48873B902AA5487200F304D3 /* CocktailDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailsView.swift; sourceTree = "<group>"; };
+		48873B952AA7F60200F304D3 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		48873B972AA7F95C00F304D3 /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
+		48873B992AA7FA0B00F304D3 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
+		48873B9B2AA7FC0700F304D3 /* RecipeInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,7 @@
 		48873B822AA3E60300F304D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				48873B942AA7F5F000F304D3 /* Tab Bar */,
 				48873B922AA5487C00F304D3 /* Search */,
 				48873B932AA5488100F304D3 /* Details */,
 			);
@@ -205,8 +214,19 @@
 			isa = PBXGroup;
 			children = (
 				48873B902AA5487200F304D3 /* CocktailDetailsView.swift */,
+				48873B972AA7F95C00F304D3 /* DetailImageView.swift */,
+				48873B9B2AA7FC0700F304D3 /* RecipeInstructionsView.swift */,
+				48873B992AA7FA0B00F304D3 /* RecipeListView.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		48873B942AA7F5F000F304D3 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				48873B952AA7F60200F304D3 /* TabBar.swift */,
+			);
+			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,14 +359,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48873B962AA7F60300F304D3 /* TabBar.swift in Sources */,
 				48873B8D2AA434AB00F304D3 /* CocktailsResponse.swift in Sources */,
 				48873B892AA3EA1A00F304D3 /* CocktailSearchViewModel.swift in Sources */,
 				48873B592AA3E5A800F304D3 /* CocktailSearchView.swift in Sources */,
+				48873B9A2AA7FA0B00F304D3 /* RecipeListView.swift in Sources */,
 				48873B572AA3E5A800F304D3 /* TheCocktailBookApp.swift in Sources */,
 				48873B8B2AA42FB600F304D3 /* Cocktail.swift in Sources */,
 				48873B872AA3E6BC00F304D3 /* TCDBService.swift in Sources */,
+				48873B982AA7F95D00F304D3 /* DetailImageView.swift in Sources */,
 				48873B8F2AA53AF300F304D3 /* CocktailRow.swift in Sources */,
 				48873B912AA5487200F304D3 /* CocktailDetailsView.swift in Sources */,
+				48873B9C2AA7FC0700F304D3 /* RecipeInstructionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

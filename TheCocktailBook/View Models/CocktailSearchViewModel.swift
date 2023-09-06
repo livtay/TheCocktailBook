@@ -23,6 +23,9 @@ final class CocktailSearchViewModel: ObservableObject {
   init(cocktailService: TCDBService) {
     self.cocktailService = cocktailService
     debounceTextChanges()
+    Task {
+      await loadCocktails()
+    }
   }
   
 }

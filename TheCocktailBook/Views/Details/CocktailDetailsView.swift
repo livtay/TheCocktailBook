@@ -7,58 +7,9 @@ struct CocktailDetailsView: View {
   var body: some View {
     ScrollView {
       VStack(alignment: .leading) {
-        AsyncImage(
-          url: URL(string: cocktail.imageUrl),
-          content: { image in
-            image
-              .resizable()
-              .scaledToFit()
-              .clipped()
-          }, placeholder: {
-            Image(systemName: "wineglass")
-              .renderingMode(.template)
-              .resizable()
-              .scaledToFit()
-              .frame(width: 75, height: 100)
-              .foregroundColor(Color(.systemGray3))
-          }
-        )
-        ZStack(alignment: .leading) {
-          Color.clear
-            .opacity(0.10)
-            .cornerRadius(16)
-            .overlay(
-              RoundedRectangle(cornerRadius: 16)
-                .stroke(.gray, lineWidth: 1)
-                .opacity(0.50)
-            )
-          VStack(alignment: .leading, spacing: 8) {
-            Text("Recipe:")
-              .font(.title2.weight(.bold))
-            Text(cocktail.recipe)
-              .font(.title2.weight(.regular))
-          }
-          .padding()
-        }
-        .padding()
-        ZStack(alignment: .leading) {
-          Color.clear
-            .opacity(0.10)
-            .cornerRadius(16)
-            .overlay(
-              RoundedRectangle(cornerRadius: 16)
-                .stroke(.gray, lineWidth: 1)
-                .opacity(0.50)
-            )
-          VStack(alignment: .leading, spacing: 8) {
-            Text("Instructions:")
-              .font(.title2.weight(.bold))
-            Text(cocktail.instructions)
-              .font(.title2.weight(.regular))
-          }
-          .padding()
-        }
-        .padding(.horizontal)
+        DetailImageView(imageUrl: cocktail.imageUrl)
+        RecipeListView(recipe: cocktail.recipe)
+        RecipeInstructionsView(instructions: cocktail.instructions)
         Spacer()
       }
     }

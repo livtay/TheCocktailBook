@@ -4,13 +4,13 @@ import SwiftUI
 struct TheCocktailBookApp: App {
   var body: some Scene {
     WindowGroup {
-      makeSearchView()
+      makeTabBar()
     }
   }
   
-  private func makeSearchView() -> CocktailSearchView {
+  private func makeTabBar() -> TabBar {
     let cocktailService = TCDBService.live
     let viewModel = CocktailSearchViewModel(cocktailService: cocktailService)
-    return CocktailSearchView(viewModel: viewModel)
+    return TabBar(searchViewModel: viewModel)
   }
 }
